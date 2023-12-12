@@ -1,0 +1,396 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="823.2,2905.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence-Carwale" sap:VirtualizedContainerService.HintSize="646.4,2840.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="https://www.carwale.com/" Name="url" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="CarName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="BMWCarScreen" sap:VirtualizedContainerService.HintSize="584,2728.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f4154d0b-a939-40c4-8f6c-d1f4be81a725" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do-Carwale" sap:VirtualizedContainerService.HintSize="550.4,2512" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="variable1" />
+              <Variable x:TypeArguments="x:String" Name="CarText" />
+              <Variable x:TypeArguments="x:Boolean" Name="ExpText" />
+              <Variable x:TypeArguments="x:Boolean" Name="isTextExist" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Click 'NEW CARS''" sap:VirtualizedContainerService.HintSize="488,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f4154d0b-a939-40c4-8f6c-d1f4be81a725" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.carwale.com/" ContentHash="fxA-JWp77kqxiShp7T_wVA" CvTextArea="443, 250, 98, 17" CvTextArgument="NEW CARS" CvType="Text" DesignTimeRectangle="445, 228, 96, 68" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Click 'NEW CARS''" FullSelectorArgument="&lt;webctrl aaname='NEW CARS' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='NEW CARS' parentid='root' tag='DIV' type='' class='o-frwuxB o-eqqVmt o-BEqzB o-eMOUEg o-OAYdd o-bdcqQE o-fznJzu o-fznJPk o-zMnZc dvEJRN' check:innerText='NEW CARS' /&gt;" Guid="0f19b45a-594c-4205-8076-8ce2831d42a3" InformativeScreenshot="b8a59dfc76be85a635e730cf6b2a4ca1.png" Reference="j0_bx2Pie0eoBiarVV20kQ/VoR4InYMtUCKXlX-VNFRFw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Cars, Used Cars, Buy a Car, Sell Your Car - CarWale' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="614, 248, 102, 19" CvTextArgument="USED CARS" CvType="Text" DesignTimeRectangle="616, 228, 100, 68" ElementType="Text" FriendlyName="'Click 'NEW CARS''" FullSelectorArgument="&lt;webctrl aaname='USED CARS' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='USED CARS' parentid='root' tag='DIV' type='' class='o-frwuxB o-eqqVmt o-BEqzB o-eMOUEg o-OAYdd o-bdcqQE o-fznJzu o-fznJPk o-zMnZc dvEJRN' check:innerText='USED CARS' /&gt;" ImageBase64="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" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Find New Cars'" sap:VirtualizedContainerService.HintSize="488,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f4154d0b-a939-40c4-8f6c-d1f4be81a725" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.carwale.com/new-cars/" CvElementArea="430, 240, 192, 69" CvTextArea="441, 271, 107, 16" CvTextArgument="Find New Cars" CvType="InputBox" DesignTimeRectangle="432, 240, 188, 69" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Find New Cars'" FullSelectorArgument="&lt;webctrl aaname='Find New Cars' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Find New Cars' parentid='root' tag='DIV' type='' class='oROWc7 gMyG4T o-eqqVmt o-frwuxB o-fzpimw o-fzpibK o-fzokgc o-fznJPk o-cpNAVm o-eKWNKE o-eemiLE o-irFhK&amp;#xA;                      ' check:innerText='Find New Cars' /&gt;" Guid="6eccdc50-ced1-4529-9cc0-cd0eb549f32c" InformativeScreenshot="9ff7b761413051d1e5a2de30b373d6e7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Cars in India 2023 | New Car Information | Best New Cars - CarWale' /&gt;" SearchSteps="Selector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="443, 183, 98, 19" CvTextArgument="NEW CARS" CvType="Text" DesignTimeRectangle="445, 163, 96, 68" ElementType="Text" FriendlyName="'NEW CARS'" FullSelectorArgument="&lt;webctrl aaname='NEW CARS' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='NEW CARS' parentid='root' tag='DIV' type='' class='o-frwuxB o-eqqVmt o-BEqzB o-eMOUEg o-OAYdd o-bdcqQE o-fznJzu o-fznJPk o-rYTQq dvEJRN' check:innerText='NEW CARS' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'All Brands'" sap:VirtualizedContainerService.HintSize="488,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f4154d0b-a939-40c4-8f6c-d1f4be81a725" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.carwale.com/new-cars/" ContentHash="gLI5XtU9LkKhuJhAVe12wA" CvElementArea="1370, 482, 206, 137" CvTextArea="1450, 576, 45, 16" CvTextArgument="BMW" CvType="Button" DesignTimeRectangle="1371, 483, 206, 133" DesignTimeScaleFactor="1.25" ElementType="ListItem" FriendlyName="'Click 'All Brands''" FullSelectorArgument="&lt;webctrl tag='LI' visibleinnertext='BMW' class='o-fznJzu o-fznJPk o-fzoTsT o-fzoTpF o-tvvmc Eqd85A o-bIMsfE o-GFmfi o-dgwiHy  o-OAYdd ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LI' visibleinnertext='BMW' class='o-fznJzu o-fznJPk o-fzoTsT o-fzoTpF o-tvvmc Eqd85A o-bIMsfE o-GFmfi o-dgwiHy  o-OAYdd ' type='' aaname='' check:text='BMW' /&gt;" Guid="4e5431bb-5317-469b-a399-58c8537c3aea" InformativeScreenshot="6cd0e6b72f9c027b51629dfcb5803e50.png" Reference="j0_bx2Pie0eoBiarVV20kQ/Nq-djNQnpE-yUMdX-pFPxA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Cars in India 2023 | New Car Information | Best New Cars - CarWale' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="335, 432, 129, 25" CvTextArgument="All Brands" CvType="Text" DesignTimeRectangle="339, 429, 1240, 33" ElementType="Text" FriendlyName="'Click 'All Brands''" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='o-eqqVmt o-eZTujG o-Hyyko o-bPYcRG ' aaname='All Brands' check:innerText='All Brands' /&gt;" ImageBase64="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" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'BMW Cars'" sap:VirtualizedContainerService.HintSize="488,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="f4154d0b-a939-40c4-8f6c-d1f4be81a725" TextString="[CarText]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.carwale.com/bmw-cars/" ContentHash="tRDrVdTNYkKrDXkAGZKVJQ" CvTextArea="339, 643, 219, 26" CvType="AnyWordGroup" DesignTimeRectangle="341, 640, 817, 33" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Get Text 'BMW Cars''" FullSelectorArgument="&lt;webctrl tag='H2' aaname='BMW Car Models' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='o-fzpilz o-dAvrcB' /&gt;" Guid="23b93edb-68dd-4963-80f6-32e7e385319a" InformativeScreenshot="dde5d280cd65d0efa5c1d87cff979f46.png" Reference="j0_bx2Pie0eoBiarVV20kQ/QIOmQ58arEKVJuzJFL7bUQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW Cars Price in India - BMW Models 2023 - Reviews, Specs &amp;amp; Dealers - CarWale' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="336, 483, 161, 28" CvTextArgument="BMW Cars" CvType="Text" DesignTimeRectangle="339, 479, 1240, 39" ElementType="Text" FriendlyName="'Get Text 'BMW Cars''" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='o-dOKno o-bNCMFw o-fzoTzs o-dKUdmM' aaname='BMW Cars' check:innerText='BMW Cars' /&gt;" ImageBase64="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" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Verify BMW car got selected or not " ContinueOnFailure="True" DisplayName="Verify Expression-Carwale" Expression="[carText=&quot;BMW Car Models&quot;]" sap:VirtualizedContainerService.HintSize="488,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" OutputMessageFormat="Verified that BMW car is selected" Result="[isTextExist]" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True" />
+            <If Condition="[isTextExist]" DisplayName="If-carText having BMW" sap:VirtualizedContainerService.HintSize="488,1194.4" sap2010:WorkflowViewState.IdRef="If_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="454.4,738.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CarName'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="411.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f4154d0b-a939-40c4-8f6c-d1f4be81a725" Version="V3">
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.carwale.com/bmw-cars/" ContentHash="igeItoQreESwOajeY_V4KQ" DesignTimeRectangle="341, 691, 817, 5203" DesignTimeScaleFactor="1.25" ElementType="List" FriendlyName="'Extract Table Data'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' tag='UL' /&gt;" Guid="1665d4a8-1e0f-4e12-9bc6-2ed853749688" InformativeScreenshot="43a3e77a5654cc8581cce34f295557f1.png" Reference="j0_bx2Pie0eoBiarVV20kQ/DeLzniYrAk-v7gyBY_gE3Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW Cars Price in India - BMW Models 2023 - Reviews, Specs &amp;amp; Dealers - CarWale' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NExtractData>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="411.2,358.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="377.6,170.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="334.4,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[CarName]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:OutputDataTable>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEachRow>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="411.2,52.8" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[CarName]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </WriteLine>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="377.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.4,52.8" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Plz Select BMW Car !&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:MessageBox>
+                  <Throw Exception="[new Exception(&quot;Plz Select BMW Car&quot;)]" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="488,243.2" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[CarText.Equals(CarName)]" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="If_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="300,328" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CarName' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f4154d0b-a939-40c4-8f6c-d1f4be81a725" Version="V3">
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="341, 350, 817, 5295" DesignTimeScaleFactor="1.25" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' tag='UL' /&gt;" Guid="b985c006-fb1e-4896-9f2e-19f99b77adde" InformativeScreenshot="43a3e77a5654cc8581cce34f295557f1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW Cars Price in India - BMW Models 2023 - Reviews, Specs &amp;amp; Dealers - CarWale' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                          </uix:NExtractData.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NExtractData>
+                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                          <ui:ForEachRow.Body>
+                            <ActivityAction x:TypeArguments="sd:DataRow">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="377.6,170.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="334.4,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[CarName]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:OutputDataTable>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEachRow.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ForEachRow>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[CarName]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </WriteLine>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="300,142.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Plz Select BMW Car !&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:MessageBox>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="6RWi3sgStEqtTKIZmQQy9A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAK/SURBVFhH7VZLaFNBFB1U/ARBkSoi4trlTF5TqlX7PrEmKfgBC6I7SRduat1UlFoUpCi4EPwtFbeCXbjsUtSKe4XWje60kDd5aRsNxfHc8SWOzVhLXhYucuAQknvn3Dv33pkJ66CDDkxUB8SeSq57XyWf2baQz6TAzeCmFkjrtoBbK/nundDcryacOMoq+Fbo3hh64r30uArd9pC0ZCDOkr4qDLHIdYbKLh9XNzI6pkbteN966fPrC1mxm77LIMOw8I5NcC2UrkBg8VYG3FHFUbaUFQwbewA2fMqemNTBCXD+3BDwRAkCJ1Wxnyml2KLXm0LWw/B5Kl3+AYktayFQB9IBeQm/T4eumIw83qPO+EwVL0I3PQS/uYa2QaqMej7IWJTjzOYQ+s61OL+WoBNAglbtmBWvZxeLfHHaZpRZzmOtloHdL9m065Ruepic7lmNhYOxTOsIPf7Gpl0n2vqQ+v/KZlSX0Z+EQAse27TrxOzMUAV+D6DBWCMRsLlbNu0GMaA0gHKlgYYn1kgE6TpXVmqbxEn4Slk2G3FEYo1EwD0w0qRtEBv9ThUoWwxtSSAKxNWV2iZRgXma1E9NxnZVwBW3m7QNYghnyemlzUg3YVKgvU9s2nXC/ppOwV2rEe9BUiDAjE27QY/fZ7i7T9mMkees4f1cHTRkNu06pS/OM7rxbMbQT0/EOi1BjQ3aT5jBaMDZoZ2R6axhmJOec0hNDTJ6reC0F/YxlOsFPr+gZdqPXjNN/SKKH+C7yOWPsPZY9Wgfo/VlX7jUBvIz9GMKzNmojs8WCy6SSI8sFno20PfqAP4P4Br91w7+RnqiEeAjks2pE+fYciCoGjfNRKA/roObkPkDXVg8b4olp1AlP32J9GnHC4HjIbELampax/wDUdC7vRYcSYHsF/sTUuusq/mHu9SzXBylgw7+KzD2EzInkakp321+AAAAAElFTkSuQmCC" InformativeScreenshot="99a23f4d1cef356131844638d94807ee.jpg" Reference="j0_bx2Pie0eoBiarVV20kQ/zpr1JCGTnUSYC2qoEDsNkw" Selector="&lt;html app='chrome.exe' title='New Cars, Used Cars, Buy a Car, Sell Your Car - CarWale' /&gt;" Title="New Cars, Used Cars, Buy a Car, Sell Your Car - CarWale" Url="https://www.carwale.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

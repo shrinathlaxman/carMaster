@@ -1,0 +1,11 @@
+﻿{
+  "Name": "CarWale",
+  "Type": "App",
+  "Id": "4jKM63BexUaV1t6DfvFDKA",
+  "Reference": "j0_bx2Pie0eoBiarVV20kQ/4jKM63BexUaV1t6DfvFDKA",
+  "Created": "2023-12-05T07:25:18.5116384Z",
+  "Updated": "2023-12-05T07:25:18.5116384Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.8.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

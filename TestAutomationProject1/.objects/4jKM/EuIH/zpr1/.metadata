@@ -1,0 +1,15 @@
+﻿{
+  "Name": "BMWCarScreen",
+  "Description": "BMWCarScreen",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Id": "zpr1JCGTnUSYC2qoEDsNkw",
+  "Reference": "j0_bx2Pie0eoBiarVV20kQ/zpr1JCGTnUSYC2qoEDsNkw",
+  "ParentRef": "j0_bx2Pie0eoBiarVV20kQ/EuIHiHAqykW4w-M9es0P5Q",
+  "Created": "2023-12-05T07:25:26.5875385Z",
+  "Updated": "2023-12-05T07:25:26.5875385Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.8.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
